@@ -1,0 +1,387 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #DBDBDB;
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    padding-bottom: 3000px;
+}
+
+
+/*********** top ***********/
+.top {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    right: 0%;
+    height: 50vh;
+}
+.top img {
+    width: 100%;
+    height: 50vh;
+    object-fit:cover;
+    filter: blur(3px); 
+}
+.top h1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    transform: translate(0,-50%);
+    color: white;
+    text-shadow: 0 0 6px black;
+    font-size: 50px;
+}
+
+/* inside info  */
+
+.offer {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: goldenrod;
+    text-shadow: 0 0 1px black;
+    z-index: 1;
+}
+
+
+.tripInfo {
+    position: absolute;
+    left: 5%;
+    right: 5%; /*  */
+    top: 60vh;
+    display: flex;
+    flex-direction: column; /*  */
+    justify-content: center; /*  */
+    align-items: center;    /*  */
+    gap: 20px; /*  */
+}
+
+.rightSideInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 50px;
+}
+.leftSideInfo {
+    width: 100%; /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tripInfoFlexBox {
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*  */
+    width: 100%;/*  */
+    gap: 10px;
+    font-weight: bold;
+}
+.tripInfoFlexBox li {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+.trip-description {
+    text-wrap: wrap;
+    border: 10px rgba(162, 162, 162, 0.78) solid;
+    border-radius: 25px;
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
+    direction: rtl;
+    min-width: 70%;
+    max-width: 90%;
+}
+
+.leftSideMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.infoHr {
+    background-color: black;
+    height: 3px; 
+    width: 140px; 
+}
+
+.trip-video {
+    width: 80%;
+    height: fit-content;
+}
+.trip-image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bookNow {
+    width: 200px;
+}
+
+.bookNow-whatsapp {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 15px;    
+    border: 2px solid grey;
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bookNow-whatsapp:hover {
+    background-color: rgb(233, 233, 233);
+}
+.emailForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+.emailForm input,.emailForm textarea {
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    direction: rtl;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.emailForm-description {
+    width: 200px;
+    resize: vertical;
+    max-height: 300px;
+}
+.emailForm-submit {
+    color: black;
+    background-color: #DBDBDB;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+.emailForm-submit:hover {
+    scale: 0.9;
+}
+
+/* others */
+.home-page {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+
+/*
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #DBDBDB;
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    padding-bottom: 2000px;
+}
+
+
+.top {
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    right: -1%;
+    height: 50vh;
+}
+.top img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: blur(5px); 
+}
+.top h1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    transform: translate(0,-50%);
+    color: white;
+    text-shadow: 0 0 6px black;
+    font-size: 50px;
+}
+
+
+.offer {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: goldenrod;
+    text-shadow: 0 0 1px black;
+    z-index: 1;
+}
+
+
+.tripInfo {
+    position: absolute;
+    left: 5%;
+    right: 10%;
+    top: 60vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: top;    
+}
+
+.rightSideInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 50px;
+}
+.leftSideInfo {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tripInfoFlexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    width: 35%;
+    gap: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+.trip-description {
+    text-wrap: wrap;
+    border: 10px rgba(162, 162, 162, 0.78) solid;
+    border-radius: 25px;
+    background-color: rgb(200, 200, 200);
+    padding: 15px;
+    direction: rtl;
+    min-width: 70%;
+    max-width: 90%;
+}
+
+.leftSideMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.infoHr {
+    background-color: black;
+    height: 3px; 
+    width: 140px; 
+    position: relative; 
+    left: 20px;
+}
+
+.trip-video {
+    width: 80%;
+    height: fit-content;
+}
+.trip-image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bookNow {
+    width: 200px;
+}
+
+.bookNow-whatsapp {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 15px;    
+    border: 2px solid grey;
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bookNow-whatsapp:hover {
+    background-color: rgb(233, 233, 233);
+}
+.emailForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+.emailForm input,.emailForm textarea {
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    direction: rtl;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.emailForm-description {
+    width: 200px;
+    resize: vertical;
+    max-height: 300px;
+}
+.emailForm-submit {
+    color: black;
+    background-color: #DBDBDB;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+.emailForm-submit:hover {
+    scale: 0.9;
+}
+*/

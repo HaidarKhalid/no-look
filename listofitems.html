@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Cairo+Play:wght@200..1000&family=Cairo:wght@200..1000&display=swap"
+        rel="stylesheet">
+    <!-- head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <!-- Linking -->
+    <link rel="stylesheet" href="listofitems.css">
+    <script src="listofitems.js" defer></script>
+</head>
+
+<body>
+    HaidarKhalid
+    <div class="top">
+        <img class="categoryImage" src="media/pictures/cities/dubai.png">
+        <h1 class="categoryHeader"></h1>
+    </div>
+    <p class="trips-count"></p>
+    
+    <div class="dropdown-list">
+        <p class="sort-by-text"><img src="media/pictures/icons/arrowdown.svg">ترتيب من الاعلى الى الاقل حسب</p>
+        <p onclick="sortBy('days')" class="sort-by-days">عدد الايام</p>
+        <p onclick="sortBy('price')" class="sort-by-price">السعر</p>
+        <p onclick="sortBy('date')" class="sort-by-date">تاريخ الاضافة</p>
+    
+    </div>
+    
+
+    <main class="cards">
+
+    </main>
+
+    <a class="home-page" href="index.html"><img src="media/pictures/icons/home.svg" alt="Home page"></a>
+</body>
+
+</html>

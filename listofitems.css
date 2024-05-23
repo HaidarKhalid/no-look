@@ -1,0 +1,202 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #DBDBDB;
+    font-family: "Bakbak One", "Cairo", sans-serif;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+
+/*********** top ***********/
+.top {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    height: 50vh;
+}
+.top img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: blur(5px); 
+}
+.top h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 0 0 6px black;
+    font-size: 50px;
+    
+}
+
+
+/********** Cards **********/
+
+.cards {
+    display: flex;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 65vh;
+}
+
+.card {
+    background-color: aqua;
+    width: 300px;
+    height: 380px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover .card-image{
+    scale: 1.1;
+}
+
+.card img, .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+.destinations-shadow-div {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.516), rgba(5, 5, 5, 0.014));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    
+}
+.destinations-shadow-div p, .offers-shadow-div p {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.offers-shadow-div {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.76), rgba(5, 5, 5, 0.06));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45%;  
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-info {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    direction: rtl;
+    gap: 2px;
+    margin-right: 5px;
+}
+.card-info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.card-info span img {
+    margin-left: 5px;
+    width: 20px;
+}
+
+.card-info-name {
+    font-size: 18px;
+}
+.card-info-location {
+    font-size: 12px
+}
+.card-info-price {
+    font-size: 12px
+}
+.card-info-days {
+    font-size: 12px
+}
+
+.card-info-name {
+    font-size: 20px;
+    margin-left: 5px;
+    -webkit-text-stroke: black 0.3px;
+}
+/* offers */
+
+.card-offer {
+    box-shadow: 0 0 15px rgb(207, 162, 49);
+    transition: 0.5s;
+}
+.card-offer:hover {
+    box-shadow: 0 0 55px rgb(178, 131, 12);
+}
+
+.card-info-name-offer {
+    color: rgb(255, 199, 58);
+}
+
+.trips-count {
+    position: absolute;
+    top: 64vh;
+    right: 10px;
+    font-weight: bold;
+}
+
+.home-page {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.dropdown-list {
+    border: 1px solid black;
+    position: absolute;
+    top: 50vh;
+    right: 10px;
+    background-color: white;
+    z-index: 1;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sort-by-text {
+    padding: 5px 0;
+}
+.sort-by-text img {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+.sort-by-days {display: none; border-top: 1px solid black; padding: 5px 0;}
+.sort-by-price {display: none; border-top: 1px solid black; padding: 5px 0;}
+.sort-by-date {display: none; border-top: 1px solid black; padding: 5px 0;}
+
+.sort-by-days:hover {background-color: #DBDBDB;}
+.sort-by-price:hover {background-color: #DBDBDB;}
+.sort-by-date:hover {background-color: #DBDBDB;}
